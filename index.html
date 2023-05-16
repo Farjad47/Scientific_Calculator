@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scientific Calculator by Farjad Khan</title>
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Scientific Calculator by Farjad Ahmed Khan</h1>
+    <input type="text" id="display" class="form-control mb-3" readonly>
+
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-primary btn-block" onclick="clearDisplay()">C</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary btn-block" onclick="deleteChar()"><</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary btn-block" onclick="getinput('&#41;')">&#41;</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary btn-block" onclick="getinput('/')">/</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-secondary btn-block" onclick="getinput('7')">7</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-secondary btn-block" onclick="getinput('8')">8</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-secondary btn-block" onclick="getinput('9')">9</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary btn-block" onclick="getinput('*')">x</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-secondary btn-block" onclick="getinput('4')">4</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-secondary btn-block" onclick="getinput('5')">5</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-secondary btn-block" onclick="getinput('6')">6</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary btn-block" onclick="getinput('-')">-</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-secondary btn-block" onclick="getinput('1')">1</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-secondary btn-block" onclick="getinput('2')">2</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-secondary btn-block" onclick="getinput('3')">3</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary btn-block" onclick="getinput('+')">+</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-secondary btn-block" onclick="getinput('0')">0</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-secondary btn-block" onclick="getinput('.')">.</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-primary btn-block" onclick="calculate()">=</button>
+</div>
+<div class="col">
+<button class="btn btn-primary btn-block" onclick="getinput('*Math.pow(')">^</button>
+</div>
+</div>
+<div class="row">
+  <div class="col">
+    <button class="btn btn-primary btn-block" onclick="getinput('Math.sqrt(')">√</button>
+  </div>
+  <div class="col">
+    <button class="btn btn-primary btn-block" onclick="getinput('Math.sin(')">sin</button>
+  </div>
+  <div class="col">
+    <button class="btn btn-primary btn-block" onclick="getinput('Math.cos(')">cos</button>
+  </div>
+  <div class="col">
+    <button class="btn btn-primary btn-block" onclick="getinput('Math.tan(')">tan</button>
+  </div>
+</div>
+</div>
+  <!-- Include Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
